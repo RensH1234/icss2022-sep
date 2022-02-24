@@ -32,5 +32,4 @@ public class ASTListener extends ICSSBaseListener {
     public AST getAST() {
         return ast;
     }
-    
 }

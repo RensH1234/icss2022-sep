@@ -65,13 +65,14 @@ percentage_literal: PERCENTAGE;
 color_literal: COLOR;
 bool_literal: TRUE | FALSE;
 conditional_operator: EQUAL_TO | NOT_EQUAL_TO | LESS_THAN | GREATER_THAN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO;
-conditional: variable | bool_literal | variable conditional_operator variable | variable conditional_operator literal |conditional AND conditional | conditional OR conditional;
+conditional_expression: variable | bool_literal | variable conditional_operator variable | variable conditional_operator literal |conditional_expression AND conditional_expression | conditional_expression OR conditional_expression;
 
-stylerule: selector OPEN_BRACE stylerule_body CLOSE_BRACE;
+stylerule: selector OPEN_BRACE body CLOSE_BRACE;
 selector: ID_IDENT | CLASS_IDENT | LOWER_IDENT;
-stylerule_body: ifclause* propertyassignment* variableassignment*;
+body: ifclause* declaration* variableassignment*;
 
-propertyassignment: LOWER_IDENT COLON expression SEMICOLON;
-elseclause: ELSE OPEN_BRACE stylerule_body CLOSE_BRACE;
-ifclause: ICH01F BOX_BRACKET_OPEN conditional BOX_BRACKET_CLOSE OPEN_BRACE stylerule_body CLOSE_BRACE (elseifclause*) (elseclause);
-elseifclause: ELSE ICH01F BOX_BRACKET_OPEN conditional BOX_BRACKET_CLOSE OPEN_BRACE stylerule_body CLOSE_BRACE;
+declaration: property COLON expression SEMICOLON;
+property: LOWER_IDENT;
+elseclause: ELSE OPEN_BRACE body CLOSE_BRACE;
+ifclause: ICH01F BOX_BRACKET_OPEN conditional_expression BOX_BRACKET_CLOSE OPEN_BRACE body CLOSE_BRACE (elseifclause*) (elseclause);
+elseifclause: ELSE ICH01F BOX_BRACKET_OPEN conditional_expression BOX_BRACKET_CLOSE OPEN_BRACE body CLOSE_BRACE;

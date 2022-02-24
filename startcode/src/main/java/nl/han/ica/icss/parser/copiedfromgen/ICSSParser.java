@@ -1,12 +1,16 @@
-// Generated from C:/Users/rensh/Desktop/HAN_ICA/ASD/Compiler/startcode/src/main/antlr4/nl/han/ica/icss/parser\ICSS.g4 by ANTLR 4.9.2
-import org.antlr.v4.runtime.atn.*;
-import org.antlr.v4.runtime.dfa.DFA;
+package nl.han.ica.icss.parser.copiedfromgen;// Generated from C:/Users/rensh/Desktop/HAN_ICA/ASD/Compiler/startcode/src/main/antlr4/nl/han/ica/icss/parser\ICSS.g4 by ANTLR 4.9.2
+
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.misc.*;
-import org.antlr.v4.runtime.tree.*;
+import org.antlr.v4.runtime.atn.ATN;
+import org.antlr.v4.runtime.atn.ATNDeserializer;
+import org.antlr.v4.runtime.atn.ParserATNSimulator;
+import org.antlr.v4.runtime.atn.PredictionContextCache;
+import org.antlr.v4.runtime.dfa.DFA;
+import org.antlr.v4.runtime.tree.ParseTreeListener;
+import org.antlr.v4.runtime.tree.ParseTreeVisitor;
+import org.antlr.v4.runtime.tree.TerminalNode;
+
 import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class ICSSParser extends Parser {
@@ -130,15 +134,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_stylesheet; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterStylesheet(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterStylesheet(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitStylesheet(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitStylesheet(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitStylesheet(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitStylesheet(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -208,15 +212,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableassignment; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterVariableassignment(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterVariableassignment(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitVariableassignment(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitVariableassignment(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitVariableassignment(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitVariableassignment(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -256,15 +260,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variable; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterVariable(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterVariable(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitVariable(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitVariable(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitVariable(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitVariable(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -312,15 +316,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterExpression(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitExpression(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitExpression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitExpression(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -367,7 +371,7 @@ public class ICSSParser extends Parser {
 			setState(77);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,4,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -453,15 +457,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterLiteral(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitLiteral(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitLiteral(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitLiteral(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitLiteral(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -532,15 +536,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_scalar_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterScalar_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterScalar_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitScalar_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitScalar_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitScalar_literal(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitScalar_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -574,15 +578,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_pixelsize_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterPixelsize_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterPixelsize_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitPixelsize_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitPixelsize_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitPixelsize_literal(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitPixelsize_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -616,15 +620,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_percentage_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterPercentage_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterPercentage_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitPercentage_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitPercentage_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitPercentage_literal(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitPercentage_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -658,15 +662,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_color_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterColor_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterColor_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitColor_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitColor_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitColor_literal(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitColor_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -701,15 +705,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_bool_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterBool_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterBool_literal(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitBool_literal(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitBool_literal(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitBool_literal(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitBool_literal(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -757,15 +761,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_conditional_operator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterConditional_operator(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterConditional_operator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitConditional_operator(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitConditional_operator(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitConditional_operator(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitConditional_operator(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -830,15 +834,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_conditional_expression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterConditional_expression(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterConditional_expression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitConditional_expression(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitConditional_expression(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitConditional_expression(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitConditional_expression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -898,7 +902,7 @@ public class ICSSParser extends Parser {
 			setState(120);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,8,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -965,15 +969,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_stylerule; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterStylerule(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterStylerule(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitStylerule(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitStylerule(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitStylerule(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitStylerule(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1015,15 +1019,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_selector; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterSelector(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterSelector(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitSelector(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitSelector(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitSelector(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitSelector(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1083,15 +1087,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_body; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterBody(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitBody(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitBody(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitBody(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitBody(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1173,15 +1177,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_declaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterDeclaration(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitDeclaration(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitDeclaration(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitDeclaration(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitDeclaration(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1221,15 +1225,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_property; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterProperty(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterProperty(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitProperty(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitProperty(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitProperty(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitProperty(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1268,15 +1272,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elseclause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterElseclause(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterElseclause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitElseclause(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitElseclause(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitElseclause(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitElseclause(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1335,15 +1339,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_ifclause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterIfclause(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterIfclause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitIfclause(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitIfclause(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitIfclause(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitIfclause(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1373,7 +1377,7 @@ public class ICSSParser extends Parser {
 			setState(170);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,12,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					{
 					{
@@ -1423,15 +1427,15 @@ public class ICSSParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elseifclause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).enterElseifclause(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).enterElseifclause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof ICSSListener ) ((ICSSListener)listener).exitElseifclause(this);
+			if ( listener instanceof ICSSListener) ((ICSSListener)listener).exitElseifclause(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ICSSVisitor ) return ((ICSSVisitor<? extends T>)visitor).visitElseifclause(this);
+			if ( visitor instanceof ICSSVisitor) return ((ICSSVisitor<? extends T>)visitor).visitElseifclause(this);
 			else return visitor.visitChildren(this);
 		}
 	}
