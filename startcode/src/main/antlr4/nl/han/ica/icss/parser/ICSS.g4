@@ -40,8 +40,14 @@ PLUS: '+';
 MIN: '-';
 MUL: '*';
 ASSIGNMENT_OPERATOR: ':=';
-
-
+EQUAL_TO: '==';
+GREATER_THAN: '>';
+LESS_THAN: '<';
+NOT_EQUAL_TO: '!=';
+GREATER_THAN_OR_EQUAL_TO: '>=';
+LESS_THAN_OR_EQUAL_TO: '<=';
+AND: '&&';
+OR: '||';
 
 
 //--- PARSER: ---
@@ -56,8 +62,10 @@ literal: scalar_literal | pixelsize_literal | percentage_literal | color_literal
 scalar_literal: SCALAR;
 pixelsize_literal: PIXELSIZE;
 percentage_literal: PERCENTAGE;
-bool_literal: TRUE | FALSE;
 color_literal: COLOR;
+bool_literal: TRUE | FALSE | conditional;
+conditional_operator: EQUAL_TO | NOT_EQUAL_TO | LESS_THAN | GREATER_THAN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO;
+conditional: variable | variable conditional_operator variable | variable conditional_operator literal |conditional AND conditional | conditional OR conditional;
 
 stylerule: selector OPEN_BRACE stylerule_body CLOSE_BRACE;
 selector: ID_IDENT | CLASS_IDENT | LOWER_IDENT;
@@ -65,5 +73,5 @@ stylerule_body: ifclause* propertyassignment* variableassignment*;
 
 propertyassignment: LOWER_IDENT COLON expression SEMICOLON;
 elseclause: ELSE OPEN_BRACE stylerule_body CLOSE_BRACE;
-ifclause: ICH01F BOX_BRACKET_OPEN conditional BOX_BRACKET_CLOSE OPEN_BRACE stylerule_body CLOSE_BRACE (elseclause);
-conditional: variable | bool_literal;
+ifclause: ICH01F BOX_BRACKET_OPEN conditional BOX_BRACKET_CLOSE OPEN_BRACE stylerule_body CLOSE_BRACE (elseifclause*) (elseclause);
+elseifclause: ELSE ICH01F BOX_BRACKET_OPEN conditional BOX_BRACKET_CLOSE OPEN_BRACE stylerule_body CLOSE_BRACE;

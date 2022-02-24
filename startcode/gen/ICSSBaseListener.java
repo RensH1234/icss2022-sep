@@ -111,6 +111,18 @@ public class ICSSBaseListener implements ICSSListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterColor_literal(ICSSParser.Color_literalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitColor_literal(ICSSParser.Color_literalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterBool_literal(ICSSParser.Bool_literalContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -123,13 +135,25 @@ public class ICSSBaseListener implements ICSSListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterColor_literal(ICSSParser.Color_literalContext ctx) { }
+	@Override public void enterConditional_operator(ICSSParser.Conditional_operatorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitColor_literal(ICSSParser.Color_literalContext ctx) { }
+	@Override public void exitConditional_operator(ICSSParser.Conditional_operatorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterConditional(ICSSParser.ConditionalContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitConditional(ICSSParser.ConditionalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -202,6 +226,18 @@ public class ICSSBaseListener implements ICSSListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitIfclause(ICSSParser.IfclauseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterElseifclause(ICSSParser.ElseifclauseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitElseifclause(ICSSParser.ElseifclauseContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

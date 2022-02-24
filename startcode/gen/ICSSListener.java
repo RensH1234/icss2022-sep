@@ -87,6 +87,16 @@ public interface ICSSListener extends ParseTreeListener {
 	 */
 	void exitPercentage_literal(ICSSParser.Percentage_literalContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link ICSSParser#color_literal}.
+	 * @param ctx the parse tree
+	 */
+	void enterColor_literal(ICSSParser.Color_literalContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ICSSParser#color_literal}.
+	 * @param ctx the parse tree
+	 */
+	void exitColor_literal(ICSSParser.Color_literalContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link ICSSParser#bool_literal}.
 	 * @param ctx the parse tree
 	 */
@@ -97,15 +107,25 @@ public interface ICSSListener extends ParseTreeListener {
 	 */
 	void exitBool_literal(ICSSParser.Bool_literalContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ICSSParser#color_literal}.
+	 * Enter a parse tree produced by {@link ICSSParser#conditional_operator}.
 	 * @param ctx the parse tree
 	 */
-	void enterColor_literal(ICSSParser.Color_literalContext ctx);
+	void enterConditional_operator(ICSSParser.Conditional_operatorContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ICSSParser#color_literal}.
+	 * Exit a parse tree produced by {@link ICSSParser#conditional_operator}.
 	 * @param ctx the parse tree
 	 */
-	void exitColor_literal(ICSSParser.Color_literalContext ctx);
+	void exitConditional_operator(ICSSParser.Conditional_operatorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ICSSParser#conditional}.
+	 * @param ctx the parse tree
+	 */
+	void enterConditional(ICSSParser.ConditionalContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ICSSParser#conditional}.
+	 * @param ctx the parse tree
+	 */
+	void exitConditional(ICSSParser.ConditionalContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ICSSParser#stylerule}.
 	 * @param ctx the parse tree
@@ -166,4 +186,14 @@ public interface ICSSListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitIfclause(ICSSParser.IfclauseContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ICSSParser#elseifclause}.
+	 * @param ctx the parse tree
+	 */
+	void enterElseifclause(ICSSParser.ElseifclauseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ICSSParser#elseifclause}.
+	 * @param ctx the parse tree
+	 */
+	void exitElseifclause(ICSSParser.ElseifclauseContext ctx);
 }

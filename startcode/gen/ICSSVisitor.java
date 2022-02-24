@@ -58,17 +58,29 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitPercentage_literal(ICSSParser.Percentage_literalContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link ICSSParser#color_literal}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitColor_literal(ICSSParser.Color_literalContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link ICSSParser#bool_literal}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitBool_literal(ICSSParser.Bool_literalContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ICSSParser#color_literal}.
+	 * Visit a parse tree produced by {@link ICSSParser#conditional_operator}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitColor_literal(ICSSParser.Color_literalContext ctx);
+	T visitConditional_operator(ICSSParser.Conditional_operatorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#conditional}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitConditional(ICSSParser.ConditionalContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ICSSParser#stylerule}.
 	 * @param ctx the parse tree
@@ -105,4 +117,10 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitIfclause(ICSSParser.IfclauseContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#elseifclause}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitElseifclause(ICSSParser.ElseifclauseContext ctx);
 }
