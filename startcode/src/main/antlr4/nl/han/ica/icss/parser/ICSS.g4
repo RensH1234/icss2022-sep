@@ -63,9 +63,9 @@ scalar_literal: SCALAR;
 pixelsize_literal: PIXELSIZE;
 percentage_literal: PERCENTAGE;
 color_literal: COLOR;
-bool_literal: TRUE | FALSE | conditional;
+bool_literal: TRUE | FALSE;
 conditional_operator: EQUAL_TO | NOT_EQUAL_TO | LESS_THAN | GREATER_THAN | LESS_THAN_OR_EQUAL_TO | GREATER_THAN_OR_EQUAL_TO;
-conditional: variable | variable conditional_operator variable | variable conditional_operator literal |conditional AND conditional | conditional OR conditional;
+conditional: variable | bool_literal | variable conditional_operator variable | variable conditional_operator literal |conditional AND conditional | conditional OR conditional;
 
 stylerule: selector OPEN_BRACE stylerule_body CLOSE_BRACE;
 selector: ID_IDENT | CLASS_IDENT | LOWER_IDENT;

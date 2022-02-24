@@ -10,6 +10,9 @@ V5 := V6 * V7;
 p {
 	if [AdjustWidth] {
 		WidthVar := 200px;
+	}        
+	else if [TRUE || AdjustWidth == Bruh || Bruh != 12]{
+		WidthVar := 200px;
 	} else {
 		WidthVar := 250px;
 	}
