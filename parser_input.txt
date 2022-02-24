@@ -1,0 +1,18 @@
+AdjustWidth := TRUE;
+WidthVar := 0px;
+Expression := 12;
+Expression := 2 * 2;
+Expression := 12%;
+V1 := V2 * 2;
+V3 := V4 + 2 * 3;
+V5 := V6 * V7;
+
+p {
+	if [AdjustWidth] {
+		WidthVar := 200px;
+	} else {
+		WidthVar := 250px;
+	}
+
+	width: WidthVar;
+}
